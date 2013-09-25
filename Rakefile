@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TechProject::Application.load_tasks
+Flockr::Application.load_tasks

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-TechProject::Application.config.secret_key_base = '4eaf27557afc6d751993f2ab5a275fdbf383f7cf54b9a4001fa750af56394034af911aa5d111825b315785e5e5bbab98aa4d38a3cfa7853389f661a96de31faa'
+Flockr::Application.config.secret_key_base = 'f6d1b188171aa860965d53062929bd1ca6a490721c805f5d43d1bbd2d88e5a0be4c33e1b6c9c8f68fa2cc6551273cef8d772f6c3c9afe7cca2999ef6bbfc9b27'

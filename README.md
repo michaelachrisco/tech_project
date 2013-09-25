@@ -1,4 +1,4 @@
-tech_project
-============
+flockr
+======
 
-tech project
+Simple Flickr clone for ROR class
