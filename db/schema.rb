@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130919081718) do
+ActiveRecord::Schema.define(version: 20130926171204) do
+
+  create_table "payments", force: true do |t|
+    t.float    "amount"
+    t.string   "transaction_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "payments", ["user_id"], name: "index_payments_on_user_id"
 
   create_table "photos", force: true do |t|
     t.string   "file_name"

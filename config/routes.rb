@@ -1,4 +1,6 @@
 Flockr::Application.routes.draw do
+  resources :payments
+  get '/confirm_payment' => 'payments#confirm'
   root 'home#index'
 
   resources :sessions, only: %i[new create destroy]
