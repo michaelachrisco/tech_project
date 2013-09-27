@@ -12173,3 +12173,3281 @@ Started GET "/assets/store/logo.jpeg" for 127.0.0.1 at 2013-09-26 18:55:16 -0700
 
 
 Started GET "/assets/store/cart.png" for 127.0.0.1 at 2013-09-26 18:55:16 -0700
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:04:30 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (247.6ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:04:31 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (222.8ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:04:45 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (232.7ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:04:45 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (222.5ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:06:51 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (202.4ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:06:52 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (245.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-26 19:06:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Spree::HomeController#index as HTML
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/frontend_configuration/locale' LIMIT 1
+[1;32mDeface:[0m 1 overrides found for 'spree/layouts/spree_application'
+[1;32mDeface:[0m 'add_class_to_wrapper' matched 1 times with '#wrapper[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_wrapper', you should change its definition to include:
+ :original => 'd135558aa476bb59b3ef1318d0c7a5c4ad17f2f4' 
+  [1m[36mSpree::Taxonomy Load (0.1ms)[0m  [1mSELECT "spree_taxonomies".* FROM "spree_taxonomies" ORDER BY spree_taxonomies.position[0m
+  [1m[35mSpree::Taxon Load (0.2ms)[0m  SELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IS NULL AND "spree_taxons"."taxonomy_id" IN (1, 2)
+  [1m[36mSpree::Taxon Load (0.3ms)[0m  [1mSELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IN (1, 2) ORDER BY "lft"[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_taxonomies.html.erb (160.6ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_products'
+[1;32mDeface:[0m 'tweak_product_list_item' matched 1 times with '[data-hook="products_list_item"]'
+[1;32mDeface: [WARNING][0m No :original defined for 'tweak_product_list_item', you should change its definition to include:
+ :original => 'e79d4a27b07ab377d04066b4c4e52d0fe5a1d2d6' 
+  [1m[35mSQL (0.2ms)[0m  SELECT DISTINCT "spree_products".id FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL) LIMIT 12 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND "spree_products"."id" IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL)[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT DISTINCT "spree_products".id FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL) LIMIT 12 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND "spree_products"."id" IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT DISTINCT "spree_products".id FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL) LIMIT 12 OFFSET 0
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "spree_products"."id" AS t0_r0, "spree_products"."name" AS t0_r1, "spree_products"."description" AS t0_r2, "spree_products"."available_on" AS t0_r3, "spree_products"."deleted_at" AS t0_r4, "spree_products"."permalink" AS t0_r5, "spree_products"."meta_description" AS t0_r6, "spree_products"."meta_keywords" AS t0_r7, "spree_products"."tax_category_id" AS t0_r8, "spree_products"."shipping_category_id" AS t0_r9, "spree_products"."created_at" AS t0_r10, "spree_products"."updated_at" AS t0_r11, "spree_variants"."id" AS t1_r0, "spree_variants"."sku" AS t1_r1, "spree_variants"."weight" AS t1_r2, "spree_variants"."height" AS t1_r3, "spree_variants"."width" AS t1_r4, "spree_variants"."depth" AS t1_r5, "spree_variants"."deleted_at" AS t1_r6, "spree_variants"."is_master" AS t1_r7, "spree_variants"."product_id" AS t1_r8, "spree_variants"."cost_price" AS t1_r9, "spree_variants"."position" AS t1_r10, "spree_variants"."cost_currency" AS t1_r11, "spree_prices"."id" AS t2_r0, "spree_prices"."variant_id" AS t2_r1, "spree_prices"."amount" AS t2_r2, "spree_prices"."currency" AS t2_r3 FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND "spree_products"."id" IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL)[0m
+  [1m[35mSpree::Price Load (0.2ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 1]]
+  [1m[36mSpree::Image Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 1], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.2ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 1], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 2]]
+  [1m[35mSpree::Image Exists (0.1ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 2], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.1ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 2], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Price Load (0.1ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 3]]
+  [1m[36mSpree::Image Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 3], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.1ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 3], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 4]]
+  [1m[35mSpree::Image Exists (0.1ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 4], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.1ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 4], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Price Load (0.1ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 5]]
+  [1m[36mSpree::Image Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 5], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.1ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 5], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 6]]
+  [1m[35mSpree::Image Exists (0.1ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 6], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.1ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 6], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Price Load (0.1ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 7]]
+  [1m[36mSpree::Image Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 7], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.1ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 7], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 8]]
+  [1m[35mSpree::Image Exists (0.1ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 8], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.2ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 8], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Price Load (0.1ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 9]]
+  [1m[36mSpree::Image Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 9], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.1ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 9], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 10]]
+  [1m[35mSpree::Image Exists (2.3ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 10], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.2ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 10], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Price Load (0.1ms)[0m  SELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1  [["variant_id", 11]]
+  [1m[36mSpree::Image Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1[0m  [["viewable_id", 11], ["viewable_type", "Spree::Variant"]]
+  [1m[35mSpree::Image Load (0.1ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1  [["viewable_id", 11], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Price Load (0.1ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."variant_id" = ? AND "spree_prices"."currency" = 'USD' ORDER BY "spree_prices"."id" ASC LIMIT 1[0m  [["variant_id", 12]]
+  [1m[35mSpree::Image Exists (0.1ms)[0m  SELECT 1 AS one FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? LIMIT 1  [["viewable_id", 12], ["viewable_type", "Spree::Variant"]]
+  [1m[36mSpree::Image Load (0.1ms)[0m  [1mSELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_id" = ? AND "spree_assets"."viewable_type" = ? ORDER BY "spree_assets".position ASC LIMIT 1[0m  [["viewable_id", 12], ["viewable_type", "Spree::Variant"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "spree_products" INNER JOIN "spree_variants" ON "spree_variants"."product_id" = "spree_products"."id" AND "spree_variants"."is_master" = 't' INNER JOIN "spree_prices" ON "spree_prices"."variant_id" = "spree_variants"."id" WHERE "spree_products"."deleted_at" IS NULL AND "spree_prices"."currency" = 'USD' AND ("spree_products".deleted_at IS NULL or "spree_products".deleted_at >= '2013-09-27 02:06:56.181612') AND ("spree_products".available_on <= '2013-09-27 02:06:56.182090') AND (spree_prices.amount IS NOT NULL)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_products.html.erb (363.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/home/index.html.erb within spree/layouts/spree_application (539.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_head.html.erb (156.2ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_header'
+[1;32mDeface:[0m 'add_class_to_header' matched 1 times with '#header'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_header', you should change its definition to include:
+ :original => '7ec29e07994b2301401a843d3201cd0dbb259ca9' 
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_nav_bar'
+[1;32mDeface:[0m 'auth_shared_login_bar' matched 1 times with 'li#search-bar'
+[1;32mDeface: [ERROR][0m The original source for 'auth_shared_login_bar' has changed, this override should be reviewed to ensure it's still valid.
+  [1m[36mSpree::Taxon Load (0.2ms)[0m  [1mSELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IS NULL ORDER BY "lft"[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_search.html.erb (2.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_nav_bar.html.erb (7.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_main_nav_bar.html.erb (1.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_header.html.erb (23.0ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_sidebar.html.erb (0.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_footer'
+[1;32mDeface:[0m 'add_class_to_footer' matched 1 times with '#footer[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_footer', you should change its definition to include:
+ :original => 'f15fb8bff9c4cd3a3b69416f49b0c9477449c19f' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_footer.html.erb (0.7ms)
+  [1m[35mSpree::Tracker Load (0.1ms)[0m  SELECT "spree_trackers".* FROM "spree_trackers" WHERE "spree_trackers"."active" = 't' AND "spree_trackers"."environment" = 'development' ORDER BY "spree_trackers"."id" ASC LIMIT 1
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_google_analytics.html.erb (4.6ms)
+Completed 200 OK in 966ms (Views: 808.1ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/spree_frontend.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/spree_blue_theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/jquery.validate/jquery.validate.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/checkout.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/product.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/cart.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/spree_frontend.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/body-back.png" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/store/logo.jpeg" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/wrapper-back-2.png" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/cart-empty_x32.png" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/shadow-top.png" for 127.0.0.1 at 2013-09-26 19:06:57 -0700
+
+
+Started GET "/assets/bottom-shine.png" for 127.0.0.1 at 2013-09-26 19:07:05 -0700
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:17:56 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (212.2ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 27 Sep 2013 02:17:56 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (255.7ms)[0m  commit transaction
+
+
+Started GET "/users/1/photos/1" for 127.0.0.1 at 2013-09-26 19:18:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhotosController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 31ms
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with id=1):
+  app/controllers/photos_controller.rb:68:in `set_photo'
+
+
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-09-26 19:19:02 -0700
+Processing by Spree::Admin::OrdersController#index as HTML
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 354ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+Processing by Spree::UserSessionsController#new as HTML
+[1;32mDeface:[0m 1 overrides found for 'spree/layouts/spree_application'
+[1;32mDeface:[0m 'add_class_to_wrapper' matched 1 times with '#wrapper[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_wrapper', you should change its definition to include:
+ :original => '9a96322a0887ca07fc380ff62113249b7b0c20a1' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/shared/_login.html.erb (7.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/user_sessions/new.html.erb within spree/layouts/spree_application (12.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_head.html.erb (131.1ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_header'
+[1;32mDeface:[0m 'add_class_to_header' matched 1 times with '#header'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_header', you should change its definition to include:
+ :original => '947f2e751e6204fd65489f78adfdbd5973c74d5b' 
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_nav_bar'
+[1;32mDeface:[0m 'auth_shared_login_bar' matched 1 times with 'li#search-bar'
+[1;32mDeface: [ERROR][0m The original source for 'auth_shared_login_bar' has changed, this override should be reviewed to ensure it's still valid.
+  [1m[35mSpree::Taxon Load (0.2ms)[0m  SELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IS NULL ORDER BY "lft"
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_search.html.erb (39.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_nav_bar.html.erb (44.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_main_nav_bar.html.erb (1.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_header.html.erb (59.5ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_footer'
+[1;32mDeface:[0m 'add_class_to_footer' matched 1 times with '#footer[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_footer', you should change its definition to include:
+ :original => 'df8104165f5227e40970f6eea24b9ab2a01432d4' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_footer.html.erb (0.6ms)
+  [1m[36mSpree::Tracker Load (0.1ms)[0m  [1mSELECT "spree_trackers".* FROM "spree_trackers" WHERE "spree_trackers"."active" = 't' AND "spree_trackers"."environment" = 'development' ORDER BY "spree_trackers"."id" ASC LIMIT 1[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_google_analytics.html.erb (4.2ms)
+Completed 200 OK in 302ms (Views: 295.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/store/spree_frontend.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/store/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/store/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/store/spree_blue_theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/jquery.validate/jquery.validate.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:03 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/checkout.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/product.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/cart.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/spree_frontend.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/body-back.png" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/wrapper-back.png" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/cart-empty_x32.png" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/store/logo.jpeg" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/buttons/bg-button.png" for 127.0.0.1 at 2013-09-26 19:19:04 -0700
+
+
+Started GET "/assets/buttons/bg-button-hover.png" for 127.0.0.1 at 2013-09-26 19:19:08 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+Processing by Spree::UserSessionsController#new as HTML
+[1;32mDeface:[0m 1 overrides found for 'spree/layouts/spree_application'
+[1;32mDeface:[0m 'add_class_to_wrapper' matched 1 times with '#wrapper[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_wrapper', you should change its definition to include:
+ :original => '80766dac29ecf6fcc39c258f0ea2c20318750eb8' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/shared/_login.html.erb (2.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/user_sessions/new.html.erb within spree/layouts/spree_application (3.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_head.html.erb (9.8ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_header'
+[1;32mDeface:[0m 'add_class_to_header' matched 1 times with '#header'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_header', you should change its definition to include:
+ :original => '73f1fd2d23affaa6bf32cf698b241679075072df' 
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_nav_bar'
+[1;32mDeface:[0m 'auth_shared_login_bar' matched 1 times with 'li#search-bar'
+[1;32mDeface: [ERROR][0m The original source for 'auth_shared_login_bar' has changed, this override should be reviewed to ensure it's still valid.
+  [1m[35mSpree::Taxon Load (0.2ms)[0m  SELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IS NULL ORDER BY "lft"
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_search.html.erb (1.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_nav_bar.html.erb (6.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_main_nav_bar.html.erb (0.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_header.html.erb (19.7ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_footer'
+[1;32mDeface:[0m 'add_class_to_footer' matched 1 times with '#footer[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_footer', you should change its definition to include:
+ :original => 'a005620ae6a52377b7c61c7563eee7511c391068' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_footer.html.erb (0.8ms)
+  [1m[36mSpree::Tracker Load (0.2ms)[0m  [1mSELECT "spree_trackers".* FROM "spree_trackers" WHERE "spree_trackers"."active" = 't' AND "spree_trackers"."environment" = 'development' ORDER BY "spree_trackers"."id" ASC LIMIT 1[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_google_analytics.html.erb (1.1ms)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/store/spree_blue_theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/store/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/store/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/store/spree_frontend.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/jquery.validate/jquery.validate.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:15 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/checkout.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/product.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/cart.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/spree_frontend.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/cart-empty_x32.png" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/body-back.png" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/assets/store/logo.jpeg" for 127.0.0.1 at 2013-09-26 19:19:16 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+Processing by Spree::Admin::OrdersController#index as HTML
+  [1m[35mSpree::Preference Load (0.2ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+Processing by Spree::UserSessionsController#new as HTML
+[1;32mDeface:[0m 1 overrides found for 'spree/layouts/spree_application'
+[1;32mDeface:[0m 'add_class_to_wrapper' matched 1 times with '#wrapper[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_wrapper', you should change its definition to include:
+ :original => 'b4f0155620f04d28a9edd904bef6599ab44c0d59' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/shared/_login.html.erb (1.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/user_sessions/new.html.erb within spree/layouts/spree_application (3.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_head.html.erb (9.7ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_header'
+[1;32mDeface:[0m 'add_class_to_header' matched 1 times with '#header'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_header', you should change its definition to include:
+ :original => '655f8ab3d6252a5806a8e6b829d3cdee75193b87' 
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_nav_bar'
+[1;32mDeface:[0m 'auth_shared_login_bar' matched 1 times with 'li#search-bar'
+[1;32mDeface: [ERROR][0m The original source for 'auth_shared_login_bar' has changed, this override should be reviewed to ensure it's still valid.
+  [1m[36mSpree::Taxon Load (0.2ms)[0m  [1mSELECT "spree_taxons".* FROM "spree_taxons" WHERE "spree_taxons"."parent_id" IS NULL ORDER BY "lft"[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_search.html.erb (1.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_nav_bar.html.erb (6.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_main_nav_bar.html.erb (0.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_header.html.erb (19.1ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/shared/_footer'
+[1;32mDeface:[0m 'add_class_to_footer' matched 1 times with '#footer[data-hook]'
+[1;32mDeface: [WARNING][0m No :original defined for 'add_class_to_footer', you should change its definition to include:
+ :original => 'cb6187efdefcd25e313c5f5f91357aa0f09f2fe5' 
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_footer.html.erb (0.8ms)
+  [1m[35mSpree::Tracker Load (0.2ms)[0m  SELECT "spree_trackers".* FROM "spree_trackers" WHERE "spree_trackers"."active" = 't' AND "spree_trackers"."environment" = 'development' ORDER BY "spree_trackers"."id" ASC LIMIT 1
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_frontend-2.1.1/app/views/spree/shared/_google_analytics.html.erb (1.0ms)
+Completed 200 OK in 132ms (Views: 127.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/store/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/spree_blue_theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/spree_frontend.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/jquery.validate/jquery.validate.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/product.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/checkout.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/cart.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/spree_frontend.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/body-back.png" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/store/logo.jpeg" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/assets/cart-empty_x32.png" for 127.0.0.1 at 2013-09-26 19:19:21 -0700
+
+
+Started GET "/administrator" for 127.0.0.1 at 2013-09-26 19:19:27 -0700
+
+ActionController::RoutingError (No route matches [GET] "/administrator"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (127.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (343.0ms)
+
+
+Started GET "/assets/buttons/bg-button-hover.png" for 127.0.0.1 at 2013-09-26 19:21:16 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2013-09-26 19:21:16 -0700
+Processing by Spree::UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RTK2EXDbGn/VAmWIATC6L/CvI15025PhfL3iRRrXhyI=", "spree_user"=>{"email"=>"spree@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mSpree::User Load (0.2ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."email" = 'spree@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "spree_users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "spree_users"."id" = 1[0m  [["last_sign_in_at", Fri, 27 Sep 2013 02:21:16 UTC +00:00], ["current_sign_in_at", Fri, 27 Sep 2013 02:21:16 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Fri, 27 Sep 2013 02:21:16 UTC +00:00]]
+  [1m[35m (310.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "spree_users" SET "spree_api_key" = ?, "updated_at" = ? WHERE "spree_users"."id" = 1  [["spree_api_key", "affd1f1887d2e05e942289678cf0f04eb5ac33f2572aa414"], ["updated_at", Fri, 27 Sep 2013 02:21:17 UTC +00:00]]
+  [1m[36m (178.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSpree::Order Load (0.7ms)[0m  SELECT "spree_orders".* FROM "spree_orders" WHERE "spree_orders"."user_id" = ? AND "spree_orders"."completed_at" IS NULL AND "spree_orders"."created_by_id" = 1 ORDER BY created_at DESC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSpree::Order Load (0.2ms)[0m  SELECT "spree_orders".* FROM "spree_orders" WHERE "spree_orders"."number" = 'R413722658' ORDER BY "spree_orders"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_orders" WHERE (spree_orders.number LIKE 'R413722658%')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "spree_orders" ("created_at", "created_by_id", "currency", "email", "number", "state", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Sep 2013 02:21:17 UTC +00:00], ["created_by_id", 1], ["currency", "USD"], ["email", "spree@example.com"], ["number", "R413722658"], ["state", "cart"], ["updated_at", Fri, 27 Sep 2013 02:21:17 UTC +00:00], ["user_id", 1]]
+  [1m[36mSpree::TokenizedPermission Load (0.2ms)[0m  [1mSELECT "spree_tokenized_permissions".* FROM "spree_tokenized_permissions" WHERE "spree_tokenized_permissions"."permissable_id" = ? AND "spree_tokenized_permissions"."permissable_type" = ? ORDER BY "spree_tokenized_permissions"."id" ASC LIMIT 1[0m  [["permissable_id", 5], ["permissable_type", "Spree::Order"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "spree_tokenized_permissions" ("created_at", "permissable_id", "permissable_type", "token", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Sep 2013 02:21:17 UTC +00:00], ["permissable_id", 5], ["permissable_type", "Spree::Order"], ["token", "685f097c597d8c7f"], ["updated_at", Fri, 27 Sep 2013 02:21:17 UTC +00:00]]
+  [1m[36mSpree::Adjustment Load (0.2ms)[0m  [1mSELECT "spree_adjustments".* FROM "spree_adjustments" WHERE "spree_adjustments"."adjustable_id" = ? AND "spree_adjustments"."adjustable_type" = ? AND "spree_adjustments"."originator_type" = 'Spree::TaxRate' AND "spree_adjustments"."adjustable_type" = 'Spree::Order' ORDER BY spree_adjustments.created_at ASC[0m  [["adjustable_id", 5], ["adjustable_type", "Spree::Order"]]
+  [1m[35mSpree::Adjustment Load (0.3ms)[0m  SELECT "spree_adjustments".* FROM "spree_adjustments" INNER JOIN "spree_line_items" ON "spree_adjustments"."adjustable_id" = "spree_line_items"."id" AND "spree_adjustments"."adjustable_type" = 'Spree::LineItem' WHERE "spree_line_items"."order_id" = ? AND "spree_adjustments"."originator_type" = 'Spree::TaxRate' ORDER BY created_at ASC  [["order_id", 5]]
+  [1m[36mSpree::Zone Load (0.1ms)[0m  [1mSELECT "spree_zones".* FROM "spree_zones" ORDER BY zone_members_count, created_at[0m
+  [1m[35mSpree::ZoneMember Load (0.2ms)[0m  SELECT "spree_zone_members".* FROM "spree_zone_members" WHERE "spree_zone_members"."zone_id" IN (2, 1)
+  [1m[36mSpree::Zone Load (0.2ms)[0m  [1mSELECT "spree_zones".* FROM "spree_zones" WHERE "spree_zones"."default_tax" = 't' ORDER BY "spree_zones"."id" ASC LIMIT 1[0m
+  [1m[35m (193.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 951ms (ActiveRecord: 690.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-09-26 19:21:17 -0700
+Processing by Spree::Admin::OrdersController#index as HTML
+  [1m[36mSpree::User Load (0.3ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/show_only_complete_orders_by_default' LIMIT 1
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/orders_per_page' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL) LIMIT 15 OFFSET 0) subquery_for_count[0m
+  [1m[35mSpree::Order Load (0.2ms)[0m  SELECT "spree_orders".* FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL) ORDER BY "spree_orders"."completed_at" DESC LIMIT 15 OFFSET 0
+  [1m[36mSpree::Shipment Load (0.2ms)[0m  [1mSELECT "spree_shipments".* FROM "spree_shipments" WHERE "spree_shipments"."order_id" IN (2, 1)[0m
+  [1m[35mSpree::Payment Load (0.2ms)[0m  SELECT "spree_payments".* FROM "spree_payments" WHERE "spree_payments"."order_id" IN (2, 1)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/orders/index.html.erb within spree/layouts/admin (206.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (2.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (6.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (645.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/admin_interface_logo' LIMIT 1[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (4.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (11.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (15.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.4ms)
+Completed 200 OK in 935ms (Views: 920.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:19 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:20 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.2.1" for 127.0.0.1 at 2013-09-26 19:21:21 -0700
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2013-09-26 19:21:27 -0700
+Processing by Spree::Admin::ProductsController#index as HTML
+  [1m[35mSpree::User Load (0.2ms)[0m  SELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'  [["user_id", 1]]
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/admin_products_per_page' LIMIT 1[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_product_sub_menu.html.erb (18.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) AS count_all, "spree_products".id AS spree_products_id FROM "spree_products" WHERE "spree_products"."deleted_at" IS NULL GROUP BY "spree_products".id
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) AS count_all, "spree_products".id AS spree_products_id FROM "spree_products" WHERE "spree_products"."deleted_at" IS NULL GROUP BY "spree_products".id ORDER BY "spree_products"."name" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mSpree::Product Load (0.3ms)[0m  SELECT "spree_products".* FROM "spree_products" WHERE "spree_products"."deleted_at" IS NULL GROUP BY "spree_products".id ORDER BY "spree_products"."name" ASC LIMIT 10 OFFSET 0
+  [1m[36mSpree::Variant Load (0.3ms)[0m  [1mSELECT "spree_variants".* FROM "spree_variants" WHERE "spree_variants"."deleted_at" IS NULL AND "spree_variants"."is_master" = 'f' AND "spree_variants"."product_id" IN (7, 6, 2, 3, 4, 13, 5, 14, 1, 12) ORDER BY "spree_variants".position ASC[0m
+  [1m[35mSpree::Image Load (0.4ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_type" = 'Spree::Variant' AND "spree_assets"."viewable_id" IN (17, 18, 19, 20, 21, 22, 23, 24, 25, 26) ORDER BY "spree_assets".position ASC
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "spree_option_values".*, "t0"."variant_id" AS ar_association_key_name FROM "spree_option_values" INNER JOIN "spree_option_values_variants" "t0" ON "spree_option_values"."id" = "t0"."option_value_id" WHERE "t0"."variant_id" IN (17, 18, 19, 20, 21, 22, 23, 24, 25, 26)[0m
+  [1m[35mSpree::OptionType Load (0.1ms)[0m  SELECT "spree_option_types".* FROM "spree_option_types" WHERE "spree_option_types"."id" IN (1, 2) ORDER BY spree_option_types.position
+  [1m[36mSpree::Variant Load (0.3ms)[0m  [1mSELECT "spree_variants".* FROM "spree_variants" WHERE "spree_variants"."deleted_at" IS NULL AND "spree_variants"."is_master" = 't' AND "spree_variants"."product_id" IN (7, 6, 2, 3, 4, 13, 5, 14, 1, 12)[0m
+  [1m[35mSpree::Image Load (0.3ms)[0m  SELECT "spree_assets".* FROM "spree_assets" WHERE "spree_assets"."type" IN ('Spree::Image') AND "spree_assets"."viewable_type" = 'Spree::Variant' AND "spree_assets"."viewable_id" IN (7, 6, 2, 3, 4, 13, 5, 14, 1, 12) ORDER BY "spree_assets".position ASC
+  [1m[36mSpree::Price Load (0.2ms)[0m  [1mSELECT "spree_prices".* FROM "spree_prices" WHERE "spree_prices"."currency" = 'USD' AND "spree_prices"."variant_id" IN (7, 6, 2, 3, 4, 13, 5, 14, 1, 12)[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/products/index.html.erb within spree/layouts/admin (445.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (28.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.2ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (11.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (16.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 548ms (Views: 534.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:28 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:29 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:30 -0700
+
+
+Started GET "/admin/reports" for 127.0.0.1 at 2013-09-26 19:21:33 -0700
+Processing by Spree::Admin::ReportsController#index as HTML
+  [1m[35mSpree::User Load (0.3ms)[0m  SELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'  [["user_id", 1]]
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/reports/index.html.erb within spree/layouts/admin (1.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (77.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (106.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.7ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (9.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 168.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:34 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:35 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:36 -0700
+
+
+Started GET "/admin/general_settings/edit" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+Processing by Spree::Admin::GeneralSettingsController#edit as HTML
+  [1m[36mSpree::User Load (0.3ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_configuration_menu.html.erb (6.6ms)
+  [1m[35mSpree::Preference Load (0.2ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/allow_ssl_in_production' LIMIT 1
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/allow_ssl_in_staging' LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/check_for_spree_alerts' LIMIT 1
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/general_settings/edit.html.erb within spree/layouts/admin (27.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (31.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.0ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (9.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.2ms)
+Completed 200 OK in 199ms (Views: 193.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:38 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:39 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:40 -0700
+
+
+Started GET "/admin/promotions" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+Processing by Spree::Admin::PromotionsController#index as HTML
+  [1m[36mSpree::User Load (0.2ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "spree_activators" WHERE "spree_activators"."type" IN ('Spree::Promotion')
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/promotions/index.html.erb within spree/layouts/admin (8.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (32.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.5ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (79.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (86.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 192ms (Views: 183.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:42 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:43 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:44 -0700
+
+
+Started GET "/admin/promotions" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+Processing by Spree::Admin::PromotionsController#index as HTML
+  [1m[36mSpree::User Load (0.2ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.4ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "spree_activators" WHERE "spree_activators"."type" IN ('Spree::Promotion')
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/promotions/index.html.erb within spree/layouts/admin (4.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (31.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (18.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 135ms (Views: 121.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:45 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:46 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:47 -0700
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+Processing by Spree::Admin::UsersController#index as HTML
+  [1m[36mSpree::User Load (0.3ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  [1m[35mSpree::User Load (0.3ms)[0m  SELECT "spree_users".* FROM "spree_users" WHERE (spree_users.email NOT LIKE '%@example.net') LIMIT 10 OFFSET 0
+DEPRECATION WARNING: It looks like you are eager loading table(s) (one of: spree_users, example) that are referenced in a string SQL snippet. For example: 
+
+    Post.includes(:comments).where("comments.title = 'foo'")
+
+Currently, Active Record recognizes the table in the string, and knows to JOIN the comments table to the query, rather than loading comments in a separate query. However, doing this without writing a full-blown SQL parser is inherently flawed. Since we don't want to write an SQL parser, we are removing this functionality. From now on, you must explicitly tell Active Record when you are referencing a table from a string:
+
+    Post.includes(:comments).where("comments.title = 'foo'").references(:comments)
+
+If you don't rely on implicit join references you can disable the feature entirely by setting `config.active_record.disable_implicit_join_references = true`. (called from _810c7494e1034aa3b4b9027c1b0e246a at /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/admin/users/index.html.erb:35)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "spree_users" WHERE (spree_users.email NOT LIKE '%@example.net')[0m
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/admin/users/index.html.erb within spree/layouts/admin (17.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (31.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (9.8ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 107.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:48 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:49 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:50 -0700
+
+
+Started GET "/admin/users/1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+Processing by Spree::Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSpree::User Load (0.3ms)[0m  SELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1
+  [1m[36mSpree::Preference Load (0.1ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'  [["user_id", 1]]
+  [1m[36mSpree::User Load (0.2ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SELECT "spree_roles"."name" FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ?  [["user_id", 1]]
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/bundler/gems/spree_auth_devise-13e5ef225be5/app/views/spree/admin/users/show.html.erb within spree/layouts/admin (3.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (5.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (29.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (9.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 166.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:53 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:54 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:21:55 -0700
+
+
+Started GET "/payments" for 127.0.0.1 at 2013-09-26 19:22:17 -0700
+Processing by PaymentsController#index as HTML
+  [1m[36mPayment Load (0.1ms)[0m  [1mSELECT "payments".* FROM "payments"[0m
+  Rendered payments/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '890215be4e1fab639f7eba2e8f2a09c24e21720c' LIMIT 1
+Completed 200 OK in 362ms (Views: 357.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/ie.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:18 -0700
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/sessions_controller.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/store/screen.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/store/spree_frontend.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/store/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/store/spree_blue_theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:19 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:20 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/sessions_controller.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/jquery.validate/jquery.validate.min.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/store/checkout.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/store/product.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/store/cart.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/store/spree_frontend.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/store/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/body-back.png" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/assets/buttons/bg-button.png" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2013-09-26 19:22:21 -0700
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mesa/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (150.0ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (470.2ms)
+
+
+Started GET "/admin/orders" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+Processing by Spree::Admin::OrdersController#index as HTML
+  [1m[36mSpree::User Load (0.3ms)[0m  [1mSELECT "spree_users".* FROM "spree_users" WHERE "spree_users"."id" = 1 ORDER BY "spree_users"."id" ASC LIMIT 1[0m
+  [1m[35mSpree::Preference Load (0.1ms)[0m  SELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/backend_configuration/locale' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "spree_roles" INNER JOIN "spree_roles_users" ON "spree_roles"."id" = "spree_roles_users"."role_id" WHERE "spree_roles_users"."user_id" = ? AND "spree_roles"."name" = 'admin'[0m  [["user_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL) LIMIT 15 OFFSET 0) subquery_for_count[0m
+  [1m[35mSpree::Order Load (0.2ms)[0m  SELECT "spree_orders".* FROM "spree_orders" WHERE ("spree_orders"."completed_at" IS NOT NULL) ORDER BY "spree_orders"."completed_at" DESC LIMIT 15 OFFSET 0
+  [1m[36mSpree::Shipment Load (0.2ms)[0m  [1mSELECT "spree_shipments".* FROM "spree_shipments" WHERE "spree_shipments"."order_id" IN (2, 1)[0m
+  [1m[35mSpree::Payment Load (0.1ms)[0m  SELECT "spree_payments".* FROM "spree_payments" WHERE "spree_payments"."order_id" IN (2, 1)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/orders/index.html.erb within spree/layouts/admin (35.6ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_translations.html.erb (1.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_core-2.1.1/app/views/spree/shared/_routes.html.erb (0.4ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_routes.html.erb (78.0ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_head.html.erb (100.9ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_alert.html.erb (0.0ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_header'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'auth_admin_login_navigation_bar' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_header.html.erb (2.4ms)
+[1;32mDeface:[0m 1 overrides found for 'spree/admin/shared/_menu'
+[1;32mDeface:[0m 'user_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+[1;32mDeface: [ERROR][0m The original source for 'user_admin_tabs' has changed, this override should be reviewed to ensure it's still valid.
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_tabs.html.erb (5.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_menu.html.erb (9.7ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sub_menu.html.erb (0.2ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_content_header.html.erb (0.3ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_table_filter.html.erb (0.1ms)
+  Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/spree_backend-2.1.1/app/views/spree/admin/shared/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 206ms (Views: 196.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.spree.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/responsive-tables.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:28 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.powertip.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/select2.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/spree_admin.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/spree_backend.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/all.css?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery-migrate-1.0.0.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.jstree/jquery.jstree.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.delayedobserver.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.alerts/jquery.alerts.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.powertip.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.vAlign.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/css_browser_selector_dev.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/spin.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/trunk8.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jquery.adaptivemenu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/equalize.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/responsive-tables.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/jsuri.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/spree.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/spree-select2.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/address_states.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/variant_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/handlebar_extensions.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/taxon_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/option_type_autocomplete.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:29 -0700
+
+
+Started GET "/assets/admin/user_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/calculator.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/product_picker.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/checkouts/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/jquery.payment.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/gateway.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/image_settings.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/images/index.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/payments/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/zone.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/shipments.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/taxonomy.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/stock_management.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/images/new.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/states.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/all.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/stock_transfer.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/promotions.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/underscore-min.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/orders/edit_form.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/progress.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/taxon_tree_menu.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/nested-attribute.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/orders/edit.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/admin/spree_backend.js?body=1" for 127.0.0.1 at 2013-09-26 19:22:30 -0700
+
+
+Started GET "/assets/logo/spree_50.png" for 127.0.0.1 at 2013-09-26 19:22:31 -0700
