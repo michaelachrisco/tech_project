@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/spree/spree_blue_sass_theme.git
+  revision: 1bb44f1bea11350de291f4b2988e96c79969d4cf
+  specs:
+    spree_blue_theme (0.2.0)
+      sass-rails
+
+GIT
   remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
   revision: 0e88056ac5d58fb0bbd23d3fe929eac01712d964
   branch: 3
@@ -328,6 +335,7 @@ DEPENDENCIES
   sdoc
   spree (= 2.1.1)
   spree_auth_devise!
+  spree_blue_theme!
   spree_gateway!
   sqlite3
   turbolinks

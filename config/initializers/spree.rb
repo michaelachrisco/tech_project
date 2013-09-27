@@ -6,9 +6,8 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  # Example:
-  # Uncomment to override the default site name.
-  # config.site_name = "Spree Demo Site"
+  Spree::Config.set(logo: "store/logo.jpeg")
+   config.site_name = "eCommerce Store Sample Template"
 end
 
 Spree.user_class = "Spree::User"
