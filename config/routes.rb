@@ -19,6 +19,9 @@ Flockr::Application.routes.draw do
     resources :photos
   end
 
+get '/404', to: 'errors#not_found'
+get '/500', to: 'errors#server_error'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
