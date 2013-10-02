@@ -1,5 +1,7 @@
 Flockr::Application.routes.draw do
 
+  get "errors/error_404"
+  get "errors/error_500"
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
@@ -7,20 +9,11 @@ Flockr::Application.routes.draw do
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, :at => '/'
           resources :payments
-  get '/confirm_payment' => 'payments#confirm'
-  root 'home#index'
 
-  resources :sessions, only: %i[new create destroy]
-  get '/sign_up' => 'users#new'
-  get '/sign_in' => 'sessions#new'
-  delete '/sign_out' => 'sessions#destroy'
+ unless Rails.application.config.consider_all_requests_local
+   match '*not_found', to: 'errors#error_404'
+ end
 
-  resources :users do
-    resources :photos
-  end
-
-get '/404', to: 'errors#not_found'
-get '/500', to: 'errors#server_error'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
