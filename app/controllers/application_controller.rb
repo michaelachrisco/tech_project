@@ -4,18 +4,19 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
 
+ # custom 404
   unless Rails.application.config.consider_all_requests_local
-     rescue_from Exception, with: lambda { |exception| render_error 500, exception }
-     rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
+    rescue_from ActiveRecord::RecordNotFound,
+                ActionController::RoutingError,
+                ActionController::UnknownController,
+                ActionController::UnknownAction,
+                ActionController::MethodNotAllowed do |exception|
+
+      # Put loggers here, if desired.
+
+      redirect_to public/404.html
+    end
   end
- 
-  private
-  def render_error(status, exception)
-     respond_to do |format|
-     format.html { render template: "errors/error_#{status}", layout: 'layouts/application', status: status }
-     format.all { render nothing: true, status: status }
-  end
- end
 
 
 end
