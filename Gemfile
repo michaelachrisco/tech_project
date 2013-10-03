@@ -58,3 +58,7 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 
 #added blue spree template
 gem 'spree_blue_theme', :git => 'git://github.com/spree/spree_blue_sass_theme.git'
+
+
+
+gem 'spree_export', :git => 'git://github.com/ecl1pse/spree_export.git'

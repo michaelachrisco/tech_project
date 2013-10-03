@@ -9,4 +9,5 @@
  *= require_self
  *= require_tree .
  *= require store/spree_blue_theme
+ *= require store/spree_export
 */

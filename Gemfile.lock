@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/ecl1pse/spree_export.git
+  revision: 059206e07e32359a448a6ed01126acde36300274
+  specs:
+    spree_export (2.1.0)
+      spree_core (~> 2.1.0)
+
+GIT
   remote: git://github.com/spree/spree_blue_sass_theme.git
   revision: 1bb44f1bea11350de291f4b2988e96c79969d4cf
   specs:
@@ -336,6 +343,7 @@ DEPENDENCIES
   spree (= 2.1.1)
   spree_auth_devise!
   spree_blue_theme!
+  spree_export!
   spree_gateway!
   sqlite3
   turbolinks
