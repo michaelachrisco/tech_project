@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130927010544) do
+ActiveRecord::Schema.define(version: 20131003213357) do
 
   create_table "payments", force: true do |t|
     t.float    "amount"
@@ -715,6 +715,9 @@ ActiveRecord::Schema.define(version: 20130927010544) do
     t.string   "username"
     t.string   "password_digest"
     t.string   "remember_token"
+    t.string   "spree_api_key",   limit: 48
+    t.integer  "ship_address_id"
+    t.integer  "bill_address_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
