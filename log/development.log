@@ -28594,3 +28594,55 @@ ActionController::RoutingError (No route matches [GET] "/405"):
   Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (119.7ms)
   Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
   Rendered /home/mesa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (300.8ms)
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Thu, 03 Oct 2013 22:21:28 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (248.6ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Thu, 03 Oct 2013 22:21:28 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (244.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (55.3ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:11 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (234.1ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:11 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (241.2ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:37 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (232.4ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:37 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (247.1ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:49 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (241.0ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:30:49 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (247.7ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:31:07 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (243.2ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:31:07 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (233.5ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.2ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/logo' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 11[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:31:47 UTC +00:00], ["value", "--- store/logo.jpeg\n...\n"]]
+  [1m[35m (429.9ms)[0m  commit transaction
+  [1m[36mSpree::Preference Load (0.5ms)[0m  [1mSELECT "spree_preferences".* FROM "spree_preferences" WHERE "spree_preferences"."key" = '/spree/app_configuration/site_name' ORDER BY "spree_preferences"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "spree_preferences" SET "value_type" = ?, "updated_at" = ?, "value" = ? WHERE "spree_preferences"."id" = 12[0m  [["value_type", :string], ["updated_at", Fri, 04 Oct 2013 01:31:48 UTC +00:00], ["value", "--- eCommerce Store Sample Template\n...\n"]]
+  [1m[35m (278.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
